@@ -1,10 +1,10 @@
 ---
 extends: _layouts.post
 section: content
-title: Install Tensorflow GPU 13.1 on Ubuntu 18.04
+title: Install Tensorflow GPU 1.13 on Elementary OS Juno (Ubuntu 18.04)
 date: 2019-06-02
 description: This is your first blog post.
-cover_image: /assets/img/post-cover-image-2.png
+cover_image: /assets/img/posts/tf_logo.png
 ---
 
 Setting up Tensorflow with GPU support gave me good deal of pain. Internet is full of tutorials
@@ -21,7 +21,7 @@ Let's begin with a clean install.
 
 ## Step1: Install Nvidia drivers
 
-If you have `nvidia-driver-410` meta package installed, you can step this step.
+If you have `nvidia-driver-410` meta package installed, you can skip this step.
 
 Start by adding Ubuntu Graphics Driver PPA if not already added. 
 ```bash
@@ -46,7 +46,11 @@ Check if install was successful by running following
 ```bash
 nvidia-smi
 ```  
-It should print something similar to following. Notice the version of CUDA toolkit stated by the driver.
+It should print something similar to following.  
+  
+![Blog starter template screenshot](/assets/img/posts/nvidiasmi.png)  
+
+Notice the version of CUDA toolkit stated by the driver.
 Version 410 of nvidia driver for Linux is only compatible with CUDA toolkit version 10.  
 If your screen resolution is messed up after driver install, fix it with following.
 
@@ -61,6 +65,9 @@ sudo apt-get install g++ freeglut3-dev build-essential libx11-dev libxmu-dev lib
 ```
 Head over to [https://developer.nvidia.com/cuda-10.0-download-archive](https://developer.nvidia.com/cuda-10.0-download-archive)
 and download the CUDA archive.  Make sure to download runfile.  
+  
+![Blog starter template screenshot](/assets/img/posts/cudatoolkit.png)  
+
 Install it.
 ```bash
 sudo sh cuda_10.0.130_410.48_linux.run
@@ -121,3 +128,8 @@ workon tfgpu
 pip install tensorflow-gpu==1.13.1
 pip show tensorflow-gpu
 ```
+It should show something like this 
+
+![Blog starter template screenshot](/assets/img/posts/tf.png)
+  
+Now go build some [AI](https://en.wikipedia.org/wiki/Artificial_intelligence) 

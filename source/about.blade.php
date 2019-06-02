@@ -10,16 +10,21 @@
 @section('body')
     <h1>About</h1>
 
-    <img src="/assets/img/about.png"
+    {{--<img src="/assets/img/about.png"
         alt="About image"
-        class="flex rounded-full h-64 w-64 bg-contain mx-auto md:float-right my-6 md:ml-10">
+        class="flex rounded-full h-64 w-64 bg-contain mx-auto md:float-right my-6 md:ml-10">--}}
+    <img src="/assets/img/resume/me.jpg"
+         alt="About image"
+         class="flex rounded-full h-64 w-64 bg-contain mx-auto md:float-right my-6 md:ml-10">
 
     <p class="mb-6">
         I am a Software architect with an inclination towards machine learning, distributed computing and all things cloud.
+        <br>
+        I like software stacks but I find myself sometimes stuck with algebraic stacks.
     </p>
 
     <p class="mb-6">
-        I'm currently working as Technology Lead at <a href="https://allps.ch/">ALLPS GmbH</a>
+        I'm currently working as Technology Lead at <a href="https://allps.ch/">ALLPS GmbH</a>/<a href="https://billte.ch/">Billte</a>
     </p>
 
     <h3>

@@ -26,7 +26,7 @@
         @endforeach
     @endif
 
-    <div class="border-b border-blue-lighter mb-10 pb-4" v-pre>
+    <div class="border-b border-blue-lighter mb-10 pb-4 post-content" v-pre>
         @yield('content')
     </div>
 
