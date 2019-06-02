@@ -4,7 +4,7 @@ return [
     'baseUrl' => '',
     'production' => false,
     'siteName' => 'Schartz\'s',
-    'siteDescription' => 'I needed an obligatory \'my corner of Internet\', do here it is.',
+    'siteDescription' => 'I needed an obligatory \'my corner of Internet\', so here it is.',
     'siteAuthor' => 'Schartz Rehan',
 
     // collections

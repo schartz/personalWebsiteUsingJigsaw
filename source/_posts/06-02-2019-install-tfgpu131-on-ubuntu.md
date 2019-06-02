@@ -9,8 +9,9 @@ cover_image: /assets/img/posts/tf_logo.png
 
 Setting up Tensorflow with GPU support gave me good deal of pain. Internet is full of tutorials
 with older releases of Tensorflow. Some of them use an approach of installing CUDA toolkit via apt.
-This approach is not appropriate because of a number of reasons. Tensorflow 2.0 is am alpha stage now.
-It has a planned stable release in second quarter of 2019. Soon enough I'll upgrading to latest stable.
+This approach is not appropriate because of a number of reasons.  
+Tensorflow 2.0 is in alpha stage now.
+It has a planned stable release in second quarter of 2019. Soon enough I'll be upgrading to latest stable.  
 Nvidia drivers have a penchant for being compatible with specific versions of CUDA toolkit, to make matters 
 a bit more complicated Tensorflow requires a specific version of Nvidia drivers.  
 
