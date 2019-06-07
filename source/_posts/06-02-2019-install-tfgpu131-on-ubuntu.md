@@ -3,7 +3,7 @@ extends: _layouts.post
 section: content
 title: Install Tensorflow GPU 1.13 on Elementary OS Juno (Ubuntu 18.04)
 date: 2019-06-02
-description: This is your first blog post.
+description: Installing tensorflow 1.13 on Elementary OS Juno.
 cover_image: /assets/img/posts/tf_logo.png
 ---
 
