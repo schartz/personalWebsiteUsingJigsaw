@@ -2,7 +2,7 @@
 extends: _layouts.post
 section: content
 title: X.509 Certificates Explained
-date: 2019-06-26
+date: 2019-07-06
 description: This is your first blog post.
 cover_image: /assets/img/posts/cert.svg
 ---
