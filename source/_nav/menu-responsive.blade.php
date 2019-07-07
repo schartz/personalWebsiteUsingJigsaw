@@ -17,7 +17,7 @@
         <li class="pl-4">
             <a
                 title="{{ $page->siteName }} Resume"
-                href="/contact"
+                href="/resume"
                 target="_blank"
                 class="nav-menu__item hover:text-blue {{ $page->isActive('/resume') ? 'active text-blue' : '' }}"
             >Resume</a>
