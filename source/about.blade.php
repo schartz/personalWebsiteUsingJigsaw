@@ -13,7 +13,7 @@
     {{--<img src="/assets/img/about.png"
         alt="About image"
         class="flex rounded-full h-64 w-64 bg-contain mx-auto md:float-right my-6 md:ml-10">--}}
-    <img src="/assets/img/resume/me.jpg"
+    <img src="/assets/img/resume/me.png"
          alt="About image"
          class="flex rounded-full h-64 w-64 bg-contain mx-auto md:float-right my-6 md:ml-10">
 
@@ -24,7 +24,7 @@
     </p>
 
     <p class="mb-6">
-        I'm currently working as Technology Lead at <a href="https://allps.ch/">ALLPS GmbH</a>/<a href="https://billte.ch/">Billte</a>
+        I'm currently working as Technology Lead at <a href="https://allps.ch/">ALLPS GmbH</a>
     </p>
 
     <h3>

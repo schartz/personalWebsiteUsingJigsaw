@@ -11,30 +11,30 @@ To put it simply, X.509 certificate is a digital document encoded and/or
 digitally signed according to [RFC 5280](https://tools.ietf.org/html/rfc5280)
 
 Generally speaking *X.509 certificate* refers to IETF's(Internet Engineering Task Force) PKIX certificate
- and CRL profile of the X.509 certificate v3 standard. Yes there are versions of this thing.
- This version is specified in [RFC 5280](https://tools.ietf.org/html/rfc5280). It is also known as PKIX, full form being "*Public Key Infrastructure (X.509)*"
- 
- ### X509 File types
- There are a bunch of file type names being thrown around X.509. Occasionally and incorrectly it is said that they are all interchangeable. 
- While in come cases they may be interchangeable. It is always better to know your certificates and label them accordingly.  
- 
- #### Encodings (may be used as file extensions on Windows systems)
- - .DER = The DER extension is used for binary DER encoded certificates. These files may also bear the CER or the CRT extension.
-          It would be better to say that "**This is a DER encoded certificate**" rather than "This is DER certificate".
- - .PEM = The PEM extension is used for X.509v3 files which contain ASCII (Base64) encoded data prefixed with a "—–
-   BEGIN ..." type of line.
-   
- #### Common file extensions
- - CRT = The CRT extension is used for certificates. The certificates may be encoded as binary DER or as ASCII PEM. The CER and
-   CRT extensions are nearly synonymous. Most common among *nix systems
-   
- - CER = alternate form of .crt (Microsoft Convention) You can use MS to convert .crt to .cer (.both DER encoded .cer, or base64[PEM]
-   encoded .cer) The .cer file extension is also recognized by IE as a command to run a MS cryptoAPI command (specifically
-   rundll32.exe cryptext.dll,CryptExtOpenCER) which displays a dialogue for importing and/or viewing certificate contents.
- 
- - .KEY = The KEY extension is used both for public and private PKCS#8 keys. The keys may be encoded as binary DER or as ASCII
-   PEM.  
-   
+and CRL profile of the X.509 certificate v3 standard. Yes there are versions of this thing.
+This version is specified in [RFC 5280](https://tools.ietf.org/html/rfc5280). It is also known as PKIX, full form being "*Public Key Infrastructure (X.509)*"
+
+### X509 File types
+There are a bunch of file type names being thrown around X.509. Occasionally and incorrectly it is said that they are all interchangeable. 
+While in come cases they may be interchangeable. It is always better to know your certificates and label them accordingly.  
+
+#### Encodings (may be used as file extensions on Windows systems)
+- .DER = The DER extension is used for binary DER encoded certificates. These files may also bear the CER or the CRT extension.
+      It would be better to say that "**This is a DER encoded certificate**" rather than "This is DER certificate".
+- .PEM = The PEM extension is used for X.509v3 files which contain ASCII (Base64) encoded data prefixed with a "—–
+BEGIN ..." type of line.
+
+#### Common file extensions
+- CRT = The CRT extension is used for certificates. The certificates may be encoded as binary DER or as ASCII PEM. The CER and
+CRT extensions are nearly synonymous. Most common among *nix systems
+
+- CER = alternate form of .crt (Microsoft Convention) You can use MS to convert .crt to .cer (.both DER encoded .cer, or base64[PEM]
+encoded .cer) The .cer file extension is also recognized by IE as a command to run a MS cryptoAPI command (specifically
+rundll32.exe cryptext.dll,CryptExtOpenCER) which displays a dialogue for importing and/or viewing certificate contents.
+
+- .KEY = The KEY extension is used both for public and private PKCS#8 keys. The keys may be encoded as binary DER or as ASCII
+PEM.  
+
 The only time CRT and CER can safely be interchanged is when the encoding type can be identical. (ie PEM encoded CRT = PEM encoded
 CER)  
 

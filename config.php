@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Str;
+
 return [
     'baseUrl' => '',
     'production' => false,
@@ -29,11 +31,21 @@ return [
         return Datetime::createFromFormat('U', $page->date);
     },
     'getExcerpt' => function ($page, $length = 255) {
-        $content = $page->excerpt ?? $page->getContent();
-        $cleaned = strip_tags(
-            preg_replace(['/<pre>[\w\W]*?<\/pre>/', '/<h\d>[\w\W]*?<\/h\d>/'], '', $content),
-            '<code>'
+        if ($page->excerpt) {
+            return $page->excerpt;
+        }
+
+        $content = preg_split('/<!-- more -->/m', $page->getContent(), 2);
+        $cleaned = trim(
+            strip_tags(
+                preg_replace(['/<pre>[\w\W]*?<\/pre>/', '/<h\d>[\w\W]*?<\/h\d>/'], '', $content[0]),
+                '<code>'
+            )
         );
+
+        if (count($content) > 1) {
+            return $cleaned;
+        }
 
         $truncated = substr($cleaned, 0, $length);
 
@@ -46,6 +58,6 @@ return [
             : $cleaned;
     },
     'isActive' => function ($page, $path) {
-        return ends_with(trimPath($page->getPath()), trimPath($path));
+        return Str::endsWith(trimPath($page->getPath()), trimPath($path));
     },
 ];

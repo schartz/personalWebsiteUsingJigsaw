@@ -67,7 +67,8 @@ sudo apt-get install g++ freeglut3-dev build-essential libx11-dev libxmu-dev lib
 Head over to [https://developer.nvidia.com/cuda-10.0-download-archive](https://developer.nvidia.com/cuda-10.0-download-archive)
 and download the CUDA archive.  Make sure to download runfile.  
   
-![Blog starter template screenshot](/assets/img/posts/cudatoolkit.png)  
+![Blog starter template screenshot](/assets/img/posts/cudatoolkit.png)
+
 
 Install it.
 ```bash

@@ -14,7 +14,7 @@ I have been thinking about creating a blog for quite sometime. And finally my pr
   
 I am not very sure about the direction for this blog. I'll be mostly documenting about the things I've been doing and an occasional `thought_dump()` will be present.  
 
-The idea of running an entire blog from a Git repository seems interesting and a bit bewitching.  
+The idea of running an entire blog from a Git repository seemed interesting and a bit odd in the beginning.  
 
 I have interest in a lot of things. Consequently, there will be writings about a lot of things. And there will be a bunch of Computer Science, Programming and Mathematics.  
 You have been warned.
